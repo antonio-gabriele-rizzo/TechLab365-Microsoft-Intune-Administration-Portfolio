@@ -53,7 +53,7 @@ Show all
 
 After signing in, the Microsoft Intune Admin Center Home page is displayed.
 
-This page acts as the starting point for all Microsoft Intune administration tasks.
+This page serves as the starting point for all Microsoft Intune administration tasks.
 
 ![Microsoft Intune Admin Center](screenshots/intune-admin-center-home.png)
 
@@ -85,7 +85,7 @@ The **Devices** section is one of the most frequently used areas within Microsof
 
 Once computers or mobile devices have been enrolled, administrators use this section to monitor their status and perform management tasks remotely.
 
-From this page administrators can:
+From this page, administrators can:
 
 - View enrolled devices
 - Review hardware information
@@ -93,7 +93,7 @@ From this page administrators can:
 - Deploy configuration profiles
 - Perform remote management actions
 
-Microsoft Intune supports multiple operating systems including:
+Microsoft Intune supports managing devices running multiple operating systems, including:
 
 - Windows
 - Android
@@ -101,7 +101,7 @@ Microsoft Intune supports multiple operating systems including:
 - macOS
 - Linux
 
-At this stage of the laboratory no devices are displayed because device enrolment is performed later in **Chapter 04 – Android Device Enrollment**.
+At this stage of the laboratory, no devices are displayed because device enrolment is performed later in **Chapter 04 – Android Device Enrollment**.
 
 ![Devices Overview](screenshots/intune-devices-overview.png)
 
@@ -147,9 +147,9 @@ Throughout this repository, groups will be used when deploying applications and 
 
 The **Apps** section is used to deploy and manage applications across enrolled devices.
 
-One of the main advantages of Microsoft Intune is that applications can be installed remotely without requiring physical access to a user's device. This saves time for IT departments and ensures users receive the software they need in a consistent and secure manner.
+One of the main advantages of Microsoft Intune is that applications can be installed remotely without requiring physical access to a user's device. This reduces administrative effort while ensuring users receive the software they need in a consistent and secure manner.
 
-From this area administrators can:
+From this area, administrators can:
 
 - Add applications
 - Assign required applications
@@ -195,8 +195,8 @@ Endpoint Security will be explored further in **Chapter 09 – Endpoint Security
 
 Monitoring devices is an important part of endpoint management.
 
-The **Reports** section provides administrators with information about the overall health of the Microsoft Intune environment.
-
+The **Reports** section provides administrators with valuable information about the overall health and status of the Microsoft Intune environment.
+ 
 Reports can be used to review:
 
 - Device compliance
@@ -235,29 +235,28 @@ Most of these settings are configured during the initial deployment of Microsoft
 
 # Key Learnings
 
-By completing this chapter you have learned how to:
+By completing this chapter, I have learned how to:
 
-- Navigate the Microsoft Intune Admin Center
-- Understand the purpose of each major administrative area
-- Identify where devices, users and groups are managed
-- Locate application management
-- Locate Endpoint Security
-- Locate reporting features
-- Locate Tenant Administration
+- Navigate the Microsoft Intune Admin Center.
+- Understand the purpose of each major administrative area.
+- Identify where devices, users and groups are managed.
+- Locate application management.
+- Locate Endpoint Security.
+- Locate reporting features.
+- Locate Tenant Administration.
 
-This knowledge provides the foundation required for the practical configuration tasks performed in the following chapters.
-
+This chapter has provided me with a solid understanding of the Microsoft Intune Admin Center and prepared me for the practical configuration tasks covered in the following chapters.
 ---
 
 # Skills Developed
 
-By completing this chapter, the following skills were developed:
+Throughout this chapter, I developed practical experience in:
 
-- Microsoft Intune navigation
-- Endpoint management fundamentals
-- Administrative portal familiarity
-- Microsoft Intune administration
-- Technical documentation
+- Navigating the Microsoft Intune Admin Center.
+- Understanding the purpose of the main administrative areas.
+- Identifying where common administrative tasks are performed.
+- Developing a basic understanding of endpoint management.
+- Producing technical documentation using Markdown.
 
 ---
 
