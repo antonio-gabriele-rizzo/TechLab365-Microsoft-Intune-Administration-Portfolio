@@ -217,24 +217,25 @@ Once provisioning has completed, the Microsoft Intune Admin Center opens success
 
 # Key Learnings
 
-- Microsoft Intune provides cloud-based endpoint management for Windows, macOS, Android and iOS devices.
-- Microsoft Intune integrates directly with Microsoft Entra ID and Microsoft 365.
-- Microsoft Intune requires an appropriate licence before devices can be enrolled and managed.
-- Microsoft Intune Plan 1 provides the core endpoint management features required for this laboratory.
-- A Microsoft Intune trial can be added to an existing Microsoft 365 tenant.
-- The Microsoft Intune Admin Center becomes available once the trial has been successfully provisioned.
-- The Microsoft Intune Admin Center is the primary portal used to manage organisational devices.
+- Intune provides cloud-based endpoint management for Windows, macOS, Android and iOS devices.
+- It integrates directly with Microsoft Entra ID and Microsoft 365.
+- An appropriate licence is required before devices can be enrolled and managed.
+- Intune Plan 1 provides the core features required for this laboratory.
+- A trial subscription can be added to an existing Microsoft 365 tenant.
+- The Admin Center becomes available once the trial has been successfully provisioned.
+- The Admin Center is the primary portal used to manage organisational devices..
 
 ---
 
 # Skills Demonstrated
 
-- Microsoft Intune fundamentals
-- Microsoft 365 administration
-- Microsoft Entra ID integration
-- Licensing administration
-- Microsoft cloud administration
-- Technical documentation using GitHub and Markdown
+- Understanding endpoint management fundamentals
+- Activating an Intune Plan 1 Trial
+- Managing Microsoft 365 licensing
+- Navigating the Microsoft Intune Admin Center
+- Preparing a cloud-based endpoint management laboratory
+- Producing technical documentation using GitHub and Markdown
+  
 ---
 
 # Chapter Summary
