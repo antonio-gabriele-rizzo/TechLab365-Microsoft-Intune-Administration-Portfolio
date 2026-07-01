@@ -297,27 +297,39 @@ This confirms that Microsoft Intune has been successfully added to the existing 
 
 ---
 
-# Opening Microsoft Intune Admin Center
+# Accessing Microsoft Intune Admin Center
 
-Once Microsoft Intune has been successfully added to the tenant, the Microsoft Intune Admin Center becomes available.
+Microsoft Intune can be accessed using either of the following methods.
 
-From the Microsoft 365 Admin Center:
+## Method 1 – Microsoft 365 Admin Center
+
+Navigate to:
 
 ```text
-Show all
-
-Admin Centers
-
-Microsoft Intune
+https://admin.microsoft.com
 ```
 
-Alternatively, browse directly to:
+Expand **Show all**, select **Admin centers**, and then choose **Microsoft Intune**.
+
+---
+
+## Method 2 – Direct Access
+
+Microsoft Intune can also be accessed directly by navigating to:
 
 ```text
 https://intune.microsoft.com
 ```
 
-Sign in using your Global Administrator account.
+Sign in using an account with the appropriate administrative permissions, such as a Global Administrator or Intune Administrator.
+
+The direct URL provides immediate access to the Microsoft Intune Admin Center without first opening the Microsoft 365 Admin Center.
+
+---
+
+# Opening Microsoft Intune Admin Center
+
+Once Microsoft Intune has been successfully added to the tenant, the Microsoft Intune Admin Center becomes available.
 
 Depending on Microsoft's provisioning process, the Microsoft Intune Admin Center may take several minutes to appear after the trial has been activated.
 
