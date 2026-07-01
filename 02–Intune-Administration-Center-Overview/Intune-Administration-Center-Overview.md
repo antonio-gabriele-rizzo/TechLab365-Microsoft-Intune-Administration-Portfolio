@@ -235,28 +235,28 @@ Most of these settings are configured during the initial deployment of Microsoft
 
 # Key Learnings
 
-By completing this chapter, I have learned how to:
+During this chapter, I learned that:
 
-- Navigate the Microsoft Intune Admin Center.
-- Understand the purpose of each major administrative area.
-- Identify where devices, users and groups are managed.
-- Locate application management.
-- Locate Endpoint Security.
-- Locate reporting features.
-- Locate Tenant Administration.
-
-This chapter has provided me with a solid understanding of the Microsoft Intune Admin Center and prepared me for the practical configuration tasks covered in the following chapters.
+- The Microsoft Intune Admin Center is the primary portal used to manage organisational devices.
+- The Dashboard provides an overview of the Microsoft Intune environment.
+- The Devices section is used to monitor and manage enrolled devices.
+- Users and Groups are managed through Microsoft Entra ID and are used throughout Intune.
+- Applications can be deployed remotely to enrolled devices.
+- Endpoint Security centralises security policies used to protect managed devices.
+- Reports provide information about device compliance, application deployment and tenant health.
+- Tenant Administration contains settings that apply to the Intune environment as a whole.
+  
 ---
 
-# Skills Developed
+# Skills Demonstrated
 
-Throughout this chapter, I developed practical experience in:
+During this chapter, I demonstrated practical experience in:
 
 - Navigating the Microsoft Intune Admin Center.
 - Understanding the purpose of the main administrative areas.
-- Identifying where common administrative tasks are performed.
+- Locating common administrative features.
 - Developing a basic understanding of endpoint management.
-- Producing technical documentation using Markdown.
+- Producing technical documentation using GitHub and Markdown.
 
 ---
 
