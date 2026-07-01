@@ -162,6 +162,31 @@ This provides an excellent environment for learning Microsoft Intune administrat
 
 ---
 
+# Microsoft Intune Plan 1
+
+Microsoft Intune Plan 1 (P1) is the core Microsoft Intune licence that provides the essential endpoint management features required by most organisations.
+
+For this laboratory, **Microsoft Intune Plan 1 Trial** was used to build a practical endpoint management environment.
+
+The licence includes the functionality required to:
+
+- Enrol Windows, Android, iOS/iPadOS and macOS devices
+- Configure Compliance Policies
+- Deploy Configuration Profiles
+- Deploy and manage applications
+- Configure Endpoint Security policies
+- Perform remote device actions
+- Monitor managed devices
+- Generate administrative reports
+
+These capabilities provide a complete environment for learning Microsoft Intune administration and are sufficient to complete every chapter in this repository.
+
+> **Note**
+>
+> Microsoft Intune Plan 2 is an optional add-on licence that provides advanced enterprise features such as Endpoint Privilege Management (EPM), Remote Help and Microsoft Tunnel. These premium features are outside the scope of this repository.
+
+---
+
 # Creating the Microsoft Intune Trial
 
 Microsoft Intune can be activated directly from Microsoft's licensing portal.
