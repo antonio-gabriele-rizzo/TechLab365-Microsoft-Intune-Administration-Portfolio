@@ -260,6 +260,38 @@ This confirms that Microsoft Intune has been successfully added to the existing 
 
 ---
 
+# Opening Microsoft Intune Admin Center
+
+Once Microsoft Intune has been successfully added to the tenant, the Microsoft Intune Admin Center becomes available.
+
+From the Microsoft 365 Admin Center:
+
+```text
+Show all
+
+Admin Centers
+
+Microsoft Intune
+```
+
+Alternatively, browse directly to:
+
+```text
+https://intune.microsoft.com
+```
+
+Sign in using your Global Administrator account.
+
+Depending on Microsoft's provisioning process, the Microsoft Intune Admin Center may take several minutes to appear after the trial has been activated.
+
+Refresh the Microsoft 365 Admin Center if necessary.
+
+![Microsoft Intune Admin Center Home](screenshots/intune-admin-center-home.png)
+
+The successful appearance of the Microsoft Intune Admin Center confirms that the tenant is fully provisioned and ready for endpoint administration.
+
+---
+
 # Accessing Microsoft Intune Admin Center
 
 After the subscription has been provisioned, Microsoft Intune becomes available within the Microsoft 365 Admin Center.
