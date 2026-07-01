@@ -294,22 +294,25 @@ and signing in using an administrative account.
 
 # Microsoft Intune Admin Center
 
-The Microsoft Intune Admin Center is the primary management portal used to administer managed devices, applications, compliance policies and endpoint security.
+Once provisioning has completed successfully, Microsoft Intune becomes available as a dedicated administration portal.
 
-From this portal, administrators can:
+The Microsoft Intune Admin Center serves as the central location for managing:
 
-- Enrol devices
-- Manage users
-- Configure applications
-- Create compliance policies
-- Deploy configuration profiles
-- Configure Endpoint Security
-- Generate reports
-- Perform remote device actions
+- Managed devices
+- Applications
+- Compliance policies
+- Configuration profiles
+- Endpoint Security
+- Reports
+- Tenant Administration
 
-The portal serves as the central administration interface throughout the remainder of this repository.
+The Overview page provides administrators with a high-level summary of the environment and quick access to the most commonly used management areas.
+
+This portal will be used extensively throughout the remaining chapters of this repository.
 
 ![Microsoft Intune Admin Center Home](screenshots/intune-admin-center-home.png)
+
+From this point onwards, all endpoint administration tasks will be performed from within the Microsoft Intune Admin Center.
 
 ---
 
