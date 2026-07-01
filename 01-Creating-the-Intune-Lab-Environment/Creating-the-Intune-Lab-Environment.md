@@ -12,7 +12,7 @@ This environment will be used throughout the remainder of this portfolio.
 
 # Objectives
 
-By completing this chapter you will learn how to:
+By completing this chapter, I will learn how to:
 
 - Understand the purpose of Microsoft Intune
 - Verify the licensing requirements
@@ -80,7 +80,7 @@ Microsoft Intune manages devices.
 
 # Licensing Requirements
 
-Microsoft Intune requires an appropriate Microsoft license before devices can be enrolled and managed.
+Microsoft Intune requires an appropriate Microsoft licence before devices can be enrolled and managed.
 
 Microsoft Intune can be licensed either as a standalone product or as part of selected Microsoft 365 subscriptions.
 
@@ -94,7 +94,7 @@ Common licensing options include:
 
 For this laboratory, **Microsoft Intune Plan 1 Trial** was used.
 
-The trial provides everything required to build a practical Microsoft Intune laboratory and complete every exercise contained within this repository.
+The trial provides everything required to build a practical Microsoft Intune laboratory and complete every exercise in this repository.
 
 ---
 
@@ -128,7 +128,7 @@ Select:
 Microsoft Intune Plan 1 (Trial)
 ```
 
-This enables the core Microsoft Intune features required for this laboratory.
+This enables the core Microsoft Intune features throughout this laboratory.
 
 ![Microsoft Intune Plan 1 Trial](screenshots/intune-trial-selection.png)
 
@@ -138,7 +138,7 @@ This enables the core Microsoft Intune features required for this laboratory.
 
 Before activating the trial, review the renewal settings.
 
-For this laboratory the following configuration was used:
+For this laboratory, the following configuration was used:
 
 | Setting | Value |
 |---------|-------|
@@ -205,7 +205,7 @@ Open the Microsoft Intune Admin Center directly:
 https://intune.microsoft.com
 ```
 
-After provisioning has completed, the Microsoft Intune Admin Center opens successfully.
+Once provisioning has completed, the Microsoft Intune Admin Center opens successfully.
 
 > **Note**
 >
@@ -217,24 +217,28 @@ After provisioning has completed, the Microsoft Intune Admin Center opens succes
 
 # Key Learnings
 
-By completing this chapter you have learned how to:
+By completing this chapter, I have learned how to:
 
-- Activate Microsoft Intune Plan 1 Trial
-- Reuse an existing Microsoft 365 tenant
-- Verify a Microsoft Intune subscription
-- Access the Microsoft Intune Admin Center
-- Prepare an environment for endpoint management
+- Activate Microsoft Intune Plan 1 Trial.
+- Reuse an existing Microsoft 365 tenant.
+- Verify a Microsoft Intune subscription.
+- Access the Microsoft Intune Admin Center.
+- Prepare an environment for endpoint management.
+
+This chapter has provided me with a solid foundation for the practical Microsoft Intune administration tasks covered throughout the remainder of this repository.
 
 ---
 
 # Skills Developed
 
-- Microsoft Intune Fundamentals
-- Microsoft 365 Administration
-- Microsoft Entra ID Integration
-- Licensing Administration
-- Microsoft Cloud Administration
-- Technical Documentation
+Throughout this chapter, I developed practical experience in:
+
+- Understanding the purpose of Microsoft Intune.
+- Activating Microsoft Intune Plan 1 Trial.
+- Managing Microsoft Intune licensing.
+- Accessing the Microsoft Intune Admin Center.
+- Preparing a cloud-based endpoint management laboratory.
+- Producing technical documentation using Markdown.
 
 ---
 
@@ -249,4 +253,4 @@ The following tasks were completed:
 - Accessed the Microsoft Intune Admin Center
 - Prepared the environment for the remaining chapters
 
-The next chapter introduces the Microsoft Intune Admin Center and explores the main areas used by administrators to manage users, devices, applications and security.
+The next chapter introduces the Microsoft Intune Admin Center and explores the main administrative areas used to manage users, devices, applications and security.
