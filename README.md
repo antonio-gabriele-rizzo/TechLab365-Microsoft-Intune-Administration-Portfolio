@@ -20,7 +20,7 @@ This repository is the third project within the TechLab Microsoft Cloud Administ
 
 # Project Objectives
 
-The objectives of this project are to:
+Throughout this project, I aim to:
 
 - Learn Microsoft Intune administration through hands-on practice
 - Understand Mobile Device Management (MDM)
@@ -39,7 +39,7 @@ The objectives of this project are to:
 
 # Skills Demonstrated
 
-Throughout this project the following skills are demonstrated:
+Throughout this project, I demonstrate practical experience in:
 
 - Microsoft Intune Administration
 - Endpoint Management
@@ -97,7 +97,7 @@ TechLab-Microsoft-Intune-Administration-Portfolio
 ├── 01-Creating-the-Intune-Lab-Environment
 ├── 02-Intune-Administration-Center-Overview
 ├── 03-User-and-Group-Preparation
-├── 04-Android-Device-Enrollment
+├── 04-Android-Device-enrolment
 ├── 05-Compliance-Policies
 ├── 06-Configuration-Profiles
 ├── 07-Application-Deployment
@@ -114,9 +114,9 @@ TechLab-Microsoft-Intune-Administration-Portfolio
 | Chapter | Status |
 |---------|--------|
 | 01 - Creating the Intune Lab Environment | ✅ Completed |
-| 02 - Intune Administration Center Overview | ⏳ Planned |
+| 02 - Intune Administration Center Overview | ✅ Completed |
 | 03 - User and Group Preparation | ⏳ Planned |
-| 04 - Android Device Enrollment | ⏳ Planned |
+| 04 - Android Device enrolment | ⏳ Planned |
 | 05 - Compliance Policies | ⏳ Planned |
 | 06 - Configuration Profiles | ⏳ Planned |
 | 07 - Application Deployment | ⏳ Planned |
@@ -188,7 +188,7 @@ Prepare Microsoft Entra identities before enrolling managed devices.
 - Review security groups
 - Licence assignment
 - Administrative permissions
-- Role Based Access Control (RBAC)
+- Role-Based Access Control (RBAC)
 - Preparing users for enrolment
 
 ### Skills developed
@@ -200,17 +200,17 @@ Prepare Microsoft Entra identities before enrolling managed devices.
 
 ---
 
-## 04 – Android Device Enrollment
+## 04 – Android Device enrolment
 
-Enroll a physical Android device into Microsoft Intune.
+Enrol a physical Android device into Microsoft Intune.
 
 ### Topics covered
 
-- Supported Android enrollment methods
+- Supported Android enrolment methods
 - Company Portal installation
 - Android device registration
-- Android device enrollment
-- Device synchronization
+- Android device enrolment
+- Device synchronisation
 - Personally owned devices
 - Corporate-owned devices
 - Device properties
@@ -221,7 +221,7 @@ Enroll a physical Android device into Microsoft Intune.
 
 - Android Enterprise administration
 - Mobile Device Management (MDM)
-- Endpoint enrollment
+- Endpoint enrolment
 - Device lifecycle management
 
 ---
@@ -382,8 +382,8 @@ Resolve common Microsoft Intune administration issues.
 
 ### Topics covered
 
-- Device enrollment failures
-- Device synchronization issues
+- Device enrolment failures
+- Device synchronisation issues
 - Compliance failures
 - Configuration profile deployment issues
 - Application deployment failures
@@ -417,7 +417,7 @@ The chapters have been organised in the same order that an Endpoint Administrato
 10. Monitor devices and administrative reports.
 11. Troubleshoot common support scenarios.
 
-Each chapter combines theoretical concepts with practical hands-on exercises performed within a real Microsoft cloud laboratory.
+Each chapter combines fundamental concepts with practical hands-on exercises performed within a real Microsoft cloud laboratory, providing a structured learning path from basic administration to practical endpoint management.
 
 ---
 
@@ -438,7 +438,7 @@ Together, the repositories demonstrate practical experience across:
 - Identity and Access Management
 - Endpoint Management
 
-Future repositories will continue expanding the TechLab environment with technologies such as Windows Server, Active Directory, PowerShell automation and Jamf Pro.
+Future repositories will continue expanding the TechLab environment with technologies such as Windows Server, Active Directory, Group Policy, PowerShell and Jamf Pro.
 
 ---
 
@@ -462,4 +462,6 @@ IT Support • Microsoft 365 Administration • Microsoft Entra ID • Microsoft
 
 **Status:** 🚧 In Progress
 
-The repository is being developed chapter by chapter using a live Microsoft Intune environment and a physical Android device. Each completed chapter is fully documented with step-by-step procedures, screenshots, explanations and real-world administrative scenarios.
+The repository is being developed chapter by chapter using a live Microsoft Intune environment and a physical Android device.
+
+Each chapter documents my learning journey through practical exercises, step-by-step procedures, screenshots and real-world administrative tasks suitable for junior Microsoft Intune and IT Support roles.
