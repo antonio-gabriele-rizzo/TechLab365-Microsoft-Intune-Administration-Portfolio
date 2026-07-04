@@ -186,9 +186,9 @@ Prepare Microsoft Entra identities before enrolling managed devices.
 
 - Review existing users
 - Review security groups
-- Licence assignment
-- Administrative permissions
-- Role-Based Access Control (RBAC)
+- Microsoft Intune licence verification
+- Administrative roles
+- Group membership
 - Preparing users for enrolment
 
 ### Skills developed
