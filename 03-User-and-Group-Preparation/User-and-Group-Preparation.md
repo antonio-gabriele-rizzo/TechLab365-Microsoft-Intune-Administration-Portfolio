@@ -33,7 +33,7 @@ Before starting this chapter, I had already:
 - Completed Chapter 02 – Intune Administration Center Overview.
 - Access to the Microsoft Intune Admin Center.
 - A Global Administrator account.
-- The Microsoft Intune Plan 1 Trial activated.
+- The Microsoft Intune Plan 1 Trial was activated.
 
 ---
 
@@ -62,7 +62,7 @@ Users
 
 The Users page displays all identities available within the Microsoft Entra ID tenant.
 
-From this page administrators can:
+From this page, administrators can:
 
 - View user accounts.
 - Reset passwords.
