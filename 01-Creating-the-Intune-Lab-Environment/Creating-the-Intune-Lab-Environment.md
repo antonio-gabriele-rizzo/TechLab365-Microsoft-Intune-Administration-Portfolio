@@ -110,9 +110,11 @@ Sign in using your existing Microsoft 365 Global Administrator account.
 
 # Using an Existing Microsoft 365 Tenant
 
-After signing in, Microsoft detects the existing TechLab tenant.
+After signing in, Microsoft detected my existing **TechLab365** Microsoft 365 tenant automatically.
 
-Using the existing tenant allows Microsoft Intune to integrate immediately with Microsoft Entra ID and Microsoft 365.
+Rather than creating a new Microsoft 365 environment, I continued using the existing tenant that had already been configured during my previous Microsoft 365 and Microsoft Entra ID repositories.
+
+Using the existing tenant meant that Microsoft Intune could integrate immediately with Microsoft Entra ID, existing user accounts and Microsoft 365 services, providing a more realistic enterprise deployment.
 
 ![Existing Microsoft 365 Tenant](screenshots/intune-existing-tenant-account.png)
 
@@ -120,9 +122,11 @@ Using the existing tenant allows Microsoft Intune to integrate immediately with 
 
 # Selecting Microsoft Intune Plan 1 Trial
 
-After signing in to my existing Microsoft 365 tenant, Microsoft displayed the subscriptions that were available for activation.
+After confirming the tenant, Microsoft displayed the Microsoft Intune subscription options that were available for activation.
 
-I selected **Microsoft Intune Plan 1 Trial**, which provides the core endpoint management features required throughout this repository, including device enrolment, compliance policies, configuration profiles, application deployment and endpoint security.
+For this laboratory, I selected **Microsoft Intune Plan 1 Trial**.
+
+Microsoft Intune Plan 1 provides the core endpoint management capabilities required throughout this repository, including device enrolment, compliance policies, configuration profiles, application deployment and endpoint security.
 
 Using the trial licence allowed me to build a fully functional Microsoft Intune laboratory without requiring an Enterprise subscription.
 
