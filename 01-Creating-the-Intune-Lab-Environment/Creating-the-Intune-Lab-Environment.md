@@ -215,6 +215,34 @@ Once provisioning has completed, the Microsoft Intune Admin Center opens success
 
 ---
 
+# Configuring Managed Google Play
+
+After successfully accessing the Microsoft Intune Admin Center, I completed one final configuration before continuing with the remainder of the laboratory.
+
+During the initial planning of this repository, I discovered that Android Enterprise management requires Microsoft Intune to be connected to **Managed Google Play** before Android devices can be enrolled or managed.
+
+To verify the configuration, I navigated to:
+
+```text
+Tenant administration
+    └── Connectors and tokens
+            └── Managed Google Play
+```
+
+The portal confirmed that the connection had been established successfully and displayed a **Success** status.
+
+This integration creates the trust relationship between Microsoft Intune and Google's Android Enterprise platform, enabling managed Google Play applications, Android work profiles and Android Enterprise device enrolment throughout the remainder of this repository.
+
+During the configuration process, I initially attempted to register Managed Google Play using the tenant's default **onmicrosoft.com** account. I discovered that this approach was unsuitable because the registration requires a valid Google account to complete the Android Enterprise association.
+
+I resolved the issue by completing the registration using my **TechLab365 organisational email address**, after which Microsoft Intune successfully connected to Managed Google Play.
+
+Documenting this configuration within the laboratory preparation ensures that anyone following this repository can reproduce the environment without encountering the same issue.
+
+![Managed Google Play Connected](screenshots/managed-google-play-connected.png)
+
+---
+
 # Key Learnings
 
 - Intune provides cloud-based endpoint management for Windows, macOS, Android and iOS devices.
