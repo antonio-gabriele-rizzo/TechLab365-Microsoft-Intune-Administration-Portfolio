@@ -33,15 +33,11 @@ Android Enterprise enrolment begins by installing the Microsoft Company Portal a
 
 I installed Microsoft Company Portal directly from the Google Play Store on my Android device.
 
-<p align="center">
-  <img src="images/company-portal-google-play.png" alt="Microsoft Company Portal in Google Play Store" width="80%">
-</p>
+![Microsoft Company Portal](screenshots/company-portal-google-play.png)
 
 After the installation completed successfully, Company Portal became available on the device and was ready to begin the enrolment process.
 
-<p align="center">
-  <img src="images/company-portal-installed.png" alt="Microsoft Company Portal installed" width="45%">
-</p>
+![Microsoft Company Portal](screenshots/company-portal-installed.png)
 
 ---
 
@@ -51,9 +47,7 @@ After launching Company Portal, I signed in using my Microsoft Entra work accoun
 
 During the sign-in process, Company Portal validated my credentials and confirmed that my account was authorised to enrol Android devices within the tenant.
 
-<p align="center">
-  <img src="images/company-portal-sign-in.png" alt="Signing in to Microsoft Company Portal" width="45%">
-</p>
+![Microsoft Company Portal](screenshots/company-portal-sign-in.png)
 
 Successful authentication initiated the Android Enterprise registration process and prepared the device for work profile creation.
 
@@ -65,17 +59,13 @@ The work profile provides logical separation between personal and organisational
 
 Microsoft Company Portal presented information describing the purpose of the work profile before continuing with the enrolment process.
 
-<p align="center">
-  <img src="images/android-work-profile-information.png" alt="Android Enterprise work profile information" width="45%">
-</p>
+![Microsoft Company Portal](screenshots/android-work-profile-information.png)
 
 After reviewing the information, I continued with the setup process to create the managed work profile.
 
 Android automatically provisioned the work profile, installed the required management components and configured the device for Android Enterprise management.
 
-<p align="center">
-  <img src="images/android-work-profile-setup.png" alt="Creating the Android Enterprise work profile" width="45%">
-</p>
+![Microsoft Company Portal](screenshots/android-work-profile-setup.png)
 
 The enrolment process completed successfully, resulting in a dedicated work profile being created alongside my personal profile. Corporate applications and organisational data are now contained within the managed environment while my personal applications and information remain separate.
 
@@ -89,9 +79,7 @@ Navigating to **Devices > Android > Android devices** displayed the newly enroll
 
 This confirmed that the enrolment process had completed successfully and that the device was actively communicating with Microsoft Intune.
 
-<p align="center">
-  <img src="images/android-devices-overview.png" alt="Android device successfully enrolled in Microsoft Intune" width="100%">
-</p>
+![Microsoft Company Portal](screenshots/android-devices-overview.png)
 
 ---
 
