@@ -1,171 +1,304 @@
 # 07 – Configuration Profiles
 
-## Overview
+## Introduction
 
-Configuration Profiles are one of the core management features available in Microsoft Intune. They allow administrators to configure device settings remotely without requiring manual configuration by the end user. Configuration Profiles can be used to enforce organisational standards, improve security, and ensure a consistent user experience across managed devices.
+Configuration Profiles are one of the core management features within Microsoft Intune and allow administrators to configure device settings remotely without requiring manual configuration by end users.
 
-Unlike Compliance Policies, which evaluate whether a device meets defined security requirements, Configuration Profiles actively apply settings to managed devices. These settings can include password requirements, device restrictions, Wi-Fi profiles, VPN configurations, certificates, email settings, and many other operating system features.
+Unlike Compliance Policies, which determine whether a device meets an organisation's security requirements, Configuration Profiles actively configure operating system features and management settings on enrolled devices. These profiles enable organisations to standardise device configurations, improve security, simplify administration and ensure a consistent user experience across managed endpoints.
 
-For this lab environment, I created an Android Enterprise Device Restrictions profile targeting Personally-Owned Work Profile (BYOD) devices. Since the objective of the lab was to demonstrate the deployment process rather than enforce restrictive controls, I intentionally retained the default configuration settings. This ensured the enrolled Android device remained fully usable for subsequent chapters while still demonstrating the complete profile creation and assignment workflow.
+Microsoft Intune supports a wide range of Configuration Profile types, including device restrictions, Wi-Fi profiles, VPN configurations, certificates, email settings, endpoint protection and custom policies. The available settings vary depending on the operating system and enrolment method being used.
+
+In this chapter, I created an Android Enterprise Device Restrictions Configuration Profile for a Personally-Owned Work Profile device. Rather than applying unnecessary restrictions that could interfere with later laboratory exercises, I intentionally retained the default configuration while demonstrating the complete deployment workflow, including profile creation, assignment and verification.
 
 ---
 
 # Objectives
 
-During this chapter I will:
+After completing this chapter, I will be able to:
 
-- Create a new Android Enterprise Configuration Profile.
-- Select the appropriate platform and profile template.
-- Configure the profile details.
-- Assign the profile to the Android Test Users group.
-- Deploy the configuration profile through Microsoft Intune.
-- Verify that the profile has been successfully created.
+- Understand the purpose of Microsoft Intune Configuration Profiles.
+- Differentiate between Configuration Profiles and Compliance Policies.
+- Create an Android Enterprise Configuration Profile.
+- Select the appropriate profile platform and template.
+- Configure a Device Restrictions profile.
+- Assign Configuration Profiles using Microsoft Entra Security Groups.
+- Verify successful profile deployment within Microsoft Intune.
+- Understand when Device Restrictions should and should not be configured.
+
+---
+
+# Prerequisites
+
+Before starting this chapter, I had already completed:
+
+- Chapter 01 – Creating the Intune Lab Environment
+- Chapter 02 – Intune Administration Center Overview
+- Chapter 03 – User and Group Preparation
+- Chapter 04 – Android Device Enrolment
+- Chapter 05 – Deploying Android Applications with Managed Google Play
+- Chapter 06 – Compliance Policies
+
+In addition, the following components were already configured:
+
+- Microsoft Intune tenant
+- Android Enterprise connector
+- Personally-Owned Android Enterprise device
+- Microsoft Company Portal
+- Android Test Users Security Group
+- Successful Android Enterprise enrolment
+- Managed Google Play integration
+
+---
+
+# Understanding Configuration Profiles
+
+Configuration Profiles allow administrators to configure device settings remotely through Microsoft Intune.
+
+Whereas Compliance Policies evaluate whether a device satisfies predefined security requirements, Configuration Profiles actively apply configuration settings to managed devices. These settings are downloaded during the device's next check-in and are enforced by the operating system where supported.
+
+Common Configuration Profile scenarios include:
+
+- Device restrictions
+- Password configuration
+- Wi-Fi deployment
+- VPN configuration
+- Email configuration
+- Certificates
+- Kiosk mode
+- Endpoint protection settings
+
+Configuration Profiles are frequently used alongside Compliance Policies to build a complete endpoint management solution. A Configuration Profile configures the device, while a Compliance Policy evaluates whether the device meets the organisation's security requirements.
+
+For this laboratory, I selected the **Device Restrictions** template for an Android Enterprise Personally-Owned Work Profile device. This template provides administrators with numerous options for controlling work profile behaviour, although many settings are only applicable to Fully Managed or Corporate-Owned Android Enterprise devices.
+
+---
+
+To begin creating a Configuration Profile, navigate to:
+
+```text
+Microsoft Intune Admin Center
+
+Devices
+    └── Configuration
+```
+
+Initially, no Configuration Profiles existed within my Intune tenant.
+
+![Configuration Profiles Overview](screenshots/configuration-profiles-overview.png)
 
 ---
 
 # Creating an Android Enterprise Configuration Profile
 
-From the Microsoft Intune admin centre, I navigated to:
+From the Configuration Profiles page, I selected **Create** to launch the Configuration Profile wizard.
 
-**Devices → Configuration**
+Microsoft Intune first required me to choose the platform that the profile would target.
 
-This section provides a central location for managing device configuration profiles across all supported operating systems.
-
-At this stage of the project, no Android configuration profiles had been created. This provided a clean starting point for deploying a new Device Restrictions profile.
-
-![Configuration Profiles Overview](images/configuration-profiles-overview.png)
-
----
-
-Selecting **Create** launched the Configuration Profile wizard.
-
-The first step required selecting the target platform. Since my lab device is enrolled using Android Enterprise Personally-Owned Work Profile, I selected:
+For this laboratory, I selected:
 
 - **Platform:** Android Enterprise
 
-Choosing the correct platform ensures that only policies supported by the enrolled device type are available during profile creation.
+Selecting the correct platform is important because Microsoft Intune only displays templates and settings that are supported by the selected operating system and enrolment type.
 
-![Platform Selection](images/create-configuration-profile-platform.png)
+Since my enrolled test device uses Android Enterprise Personally-Owned Work Profile, Android Enterprise was the appropriate platform for this deployment.
 
----
-
-The next step required selecting the profile type.
-
-Microsoft Intune provides multiple profile templates depending on the chosen platform. For Android Enterprise Personally-Owned Work Profile devices, I selected:
-
-- **Profile type:** Device restrictions
-
-Device Restrictions profiles allow administrators to configure operating system features and behavioural settings that are supported by Android Enterprise.
-
-![Template Selection](images/configuration-profile-template-selection.png)
+![Platform Selection](screenshots/create-configuration-profile-platform.png)
 
 ---
 
-# Configuring the Profile
+The next step required selecting the profile template.
 
-After selecting the template, I configured the basic profile information.
+Microsoft Intune provides several profile types for Android Enterprise devices depending on the enrolment method being used.
 
-I entered the following values:
+For this laboratory, I selected:
+
+- **Profile type:** Personally-Owned Work Profile
+- **Template:** Device Restrictions
+
+The Device Restrictions template allows administrators to configure operating system behaviour within the managed work profile without affecting the user's personal profile. This separation is one of the key security advantages of Android Enterprise Personally-Owned Work Profile deployments, allowing organisations to manage corporate data while respecting user privacy.
+
+![Template Selection](screenshots/configuration-profile-template-selection.png)
+
+---
+
+# Configuring the Profile Basics
+
+After selecting the template, Microsoft Intune prompted me to provide the profile information.
+
+I configured the following values:
 
 | Setting | Value |
-|----------|-------|
+|---------|-------|
 | Name | Android Work Profile Device Restrictions |
 | Description | Configuration profile for Android Enterprise personally owned work profile devices in the Intune lab environment. |
 
-Providing clear names and descriptions makes policy administration significantly easier, particularly within larger environments where many similar configuration profiles may exist.
+Providing meaningful names and descriptions makes Configuration Profiles easier to identify, maintain and troubleshoot, particularly within production environments where organisations may manage hundreds of policies across multiple operating systems.
 
-![Profile Basics](images/configuration-profile-basics.png)
+---
+
+# Understanding Device Restrictions
+
+After configuring the profile information, Microsoft Intune presented the **Device Restrictions** configuration page.
+
+This page contains numerous settings that allow administrators to control various aspects of Android Enterprise devices. Depending on the enrolment type, these settings can be used to:
+
+- Restrict hardware features.
+- Control application behaviour.
+- Configure work profile settings.
+- Enforce password requirements.
+- Limit data sharing between personal and work profiles.
+- Disable specific operating system features.
+
+For Corporate-Owned and Fully Managed Android Enterprise devices, Device Restrictions provide administrators with extensive management capabilities. However, the options available for **Personally-Owned Work Profile** devices are intentionally more limited.
+
+This is because Android Enterprise uses a clear separation between the user's personal data and the managed work profile. Microsoft Intune can only manage the corporate work profile and cannot control settings within the user's personal profile.
+
+As I reviewed the available configuration categories, I found that many settings either:
+
+- applied only to Fully Managed Android Enterprise devices,
+- applied only to Corporate-Owned Work Profile devices, or
+- were not applicable to Personally-Owned Work Profile devices.
+
+Enabling restrictions that do not apply to the enrolled device would provide no practical benefit within this laboratory and could potentially interfere with future chapters of this project.
+
+For this reason, I intentionally retained the default configuration.
+
+This approach reflects a realistic administrative decision rather than configuring settings simply for demonstration purposes. In a production environment, administrators should only deploy restrictions that satisfy genuine business or security requirements.
 
 ---
 
 # Assigning the Configuration Profile
 
-Once the basic profile information had been configured, I proceeded to the assignment stage.
+After reviewing the available settings, I continued to the assignment stage.
 
-To ensure the profile was deployed only to the intended test environment, I assigned it to the **Android Test Users** security group that I created earlier in the project.
+Rather than assigning the Configuration Profile directly to an individual user, I targeted the **Android Test Users** Microsoft Entra Security Group that I created earlier in this project.
 
-Using group-based assignments is considered best practice because it provides a scalable and manageable deployment model. Rather than targeting individual users or devices, administrators can simply manage group membership, allowing policies to be applied automatically as users join or leave the group.
+Using Security Groups provides a scalable administration model because future users automatically receive assigned policies simply by becoming members of the appropriate group. This approach also reduces ongoing administrative effort and aligns with Microsoft Intune best practices.
 
-For this lab, the assignment configuration was:
+For this laboratory, I configured the following assignment:
 
 | Assignment | Value |
 |------------|-------|
 | Included groups | Android Test Users |
 
-No exclusion groups were configured because this isolated lab environment only contains test resources.
+No exclusion groups were configured because the laboratory environment contains only a single test user.
 
-![Profile Assignments](images/configuration-profile-assignments.png)
+![Configuration Profile Assignments](screenshots/configuration-profile-assignments.png)
 
 ---
 
-After reviewing the assignment, I selected **Create** to deploy the configuration profile.
+# Creating the Configuration Profile
 
-Microsoft Intune processed the request and created the policy, making it available within the Configuration Profiles list.
+After confirming the assignment, I selected **Create** to deploy the Configuration Profile.
 
-Returning to the Configuration page confirmed that the new profile had been successfully created.
+Microsoft Intune processed the request and created the policy within the tenant.
 
-The profile list displays key administrative information including:
+Returning to the Configuration Profiles page confirmed that the new profile had been successfully created.
+
+The Configuration Profiles list provides administrators with a central overview of deployed policies together with useful management information, including:
 
 - Policy name
-- Target platform
-- Policy type
+- Platform
+- Profile type
 - Last modified date
 - Scope tags
 
-This provides administrators with a central overview of all deployed configuration profiles within the tenant.
+From this page, administrators can also edit, duplicate, delete and monitor existing Configuration Profiles.
 
-![Configuration Profiles List](images/configuration-profiles-list.png)
+Seeing the newly created profile listed confirmed that Microsoft Intune had successfully stored the configuration.
+
+![Configuration Profiles List](screenshots/configuration-profiles-list.png)
 
 ---
 
 # Verifying the Configuration Profile
 
-After the profile had been created, I opened it to verify that Microsoft Intune had stored the configuration correctly.
+To verify the deployment, I opened the newly created Configuration Profile.
 
-The profile overview displayed:
+The overview page displayed important information relating to the policy, including:
 
-- Device configuration profile name
 - Device and user check-in status
-- Platform information
+- Policy properties
+- Platform
 - Profile type
-- Profile properties
+- Assigned scope tags
 
-This verification step is an important part of any deployment process. Rather than assuming the policy has been created successfully, reviewing the profile confirms that the correct platform, profile type and descriptive information have been saved before relying on the policy in a production environment.
+Reviewing the profile immediately after creation is a good administrative practice because it confirms that the policy has been created correctly before relying on it within a production environment.
 
-![Configuration Profile Overview](images/configuration-profile-overview.png)
+This verification also provides an opportunity to confirm that the correct template, platform and descriptive information have been saved.
+
+![Configuration Profile Overview](screenshots/configuration-profile-overview.png)
 
 ---
 
-# Lab Observations
+# Monitoring Deployment
 
-During testing, I intentionally left all Device Restriction settings at their default values.
+Unlike the Compliance Policy created in the previous chapter, this Configuration Profile intentionally retained the default Device Restrictions.
 
-This decision was made because the enrolled device uses an **Android Enterprise Personally-Owned Work Profile (BYOD)** deployment model. Many available restriction settings are designed primarily for Fully Managed or Corporate-Owned Android Enterprise devices and either do not apply to Personally-Owned Work Profiles or would unnecessarily interfere with later chapters in this project.
+As a result, Microsoft Intune had no custom configuration settings to deploy to the enrolled Android Enterprise device.
 
-By retaining the default configuration, I demonstrated the complete policy creation and deployment process while preserving a functional test device for future Intune exercises.
+Although the profile itself was successfully created and assigned, the monitoring pages did not generate deployment statistics during the laboratory session because there were no configuration changes requiring evaluation by the managed work profile.
 
-Immediately after deployment, the reporting dashboard did not display processed device status information. Since no custom restriction settings were configured, the profile contained only the default configuration, resulting in no observable configuration changes being applied during the lab session. This behaviour is consistent with the objective of demonstrating profile deployment rather than enforcing device restrictions.
+This behaviour differs from Compliance Policies, where Microsoft Intune actively evaluates device compliance against defined security requirements and produces compliance reports.
+
+Understanding this distinction is important because successful policy creation does not necessarily result in immediate deployment statistics. The information displayed within the monitoring pages depends on both the profile content and the device's evaluation process during subsequent synchronisation.
+
+---
+
+# Key Learnings
+
+- Configuration Profiles actively configure managed devices, whereas Compliance Policies evaluate whether devices meet organisational security requirements.
+- Microsoft Intune provides different Configuration Profile templates depending on the operating system and enrolment method.
+- Android Enterprise Personally-Owned Work Profile devices support a subset of Device Restriction settings when compared with Fully Managed or Corporate-Owned devices.
+- Microsoft Entra Security Groups provide an efficient and scalable method for assigning Configuration Profiles.
+- Not every available policy setting should be configured. Administrators should apply only those settings that support genuine operational or security requirements.
+- Verifying newly created policies within Microsoft Intune helps confirm successful deployment before relying on them in production environments.
 
 ---
 
 # Skills Demonstrated
 
-Throughout this exercise I demonstrated the ability to:
+Throughout this chapter, I demonstrated the following practical Microsoft Intune administration skills:
 
-- Create Android Enterprise Configuration Profiles.
-- Select the appropriate profile platform and template.
-- Configure policy metadata using meaningful naming conventions.
-- Deploy configuration profiles using Azure AD security groups.
-- Verify successful profile creation within Microsoft Intune.
-- Understand the difference between Configuration Profiles and Compliance Policies.
-- Apply configuration management principles appropriate for Android Enterprise Personally-Owned Work Profile devices.
+- Microsoft Intune Configuration Profile administration.
+- Android Enterprise device management.
+- Device Restrictions policy deployment.
+- Microsoft Entra Security Group assignments.
+- Mobile Device Management (MDM).
+- Policy verification and administration.
+- Android Enterprise Personally-Owned Work Profile management.
+- Technical documentation using GitHub and Markdown.
 
 ---
 
-# Conclusion
+# Interview Tip
 
-In this chapter I successfully created and deployed my first Microsoft Intune Configuration Profile for Android Enterprise Personally-Owned Work Profile devices.
+A common interview question for IT Support, Service Desk and Junior Endpoint Administrator roles is:
 
-Although no custom device restrictions were configured, the exercise demonstrated the complete administrative workflow required to deploy configuration profiles using Microsoft Intune. This included selecting the appropriate platform and template, configuring policy information, assigning the profile to a security group, deploying the policy and verifying its creation within the Intune Admin Center.
+> **"What is the difference between a Configuration Profile and a Compliance Policy in Microsoft Intune?"**
 
-This provides the foundation for more advanced device management scenarios that will be explored in the following chapters, including Endpoint Security, Device Management and policy troubleshooting.
+A good answer is:
+
+- A **Configuration Profile** applies settings **to** a managed device. Examples include Wi-Fi profiles, VPN settings, certificates, device restrictions and password configuration.
+- A **Compliance Policy** checks whether a managed device **meets** the organisation's security requirements. Examples include encryption status, operating system version, password requirements and root detection.
+- A device can successfully receive Configuration Profiles while still being reported as **Noncompliant** if it fails one or more compliance checks.
+- Compliance results are commonly used together with Microsoft Entra Conditional Access policies to control access to Microsoft 365 and other corporate resources.
+
+Understanding the distinction between these two policy types demonstrates a solid understanding of modern endpoint management and is frequently assessed during Microsoft Intune interviews.
+
+---
+
+# Chapter Summary
+
+In this chapter, I created my first Android Enterprise Configuration Profile using Microsoft Intune.
+
+I selected the appropriate Android Enterprise platform and Device Restrictions template, configured the profile information and assigned the policy to the **Android Test Users** Microsoft Entra Security Group.
+
+Rather than enabling unnecessary restrictions, I deliberately retained the default Device Restriction settings because the enrolled device uses an Android Enterprise Personally-Owned Work Profile. This approach reflects a realistic administrative decision, ensuring that only appropriate settings are deployed while preserving the device for future laboratory exercises.
+
+Finally, I verified that the Configuration Profile had been successfully created within Microsoft Intune and confirmed that the deployment was ready for use.
+
+This exercise demonstrated the complete lifecycle of creating and deploying a Microsoft Intune Configuration Profile while reinforcing the importance of selecting the correct policy type, assigning it through Microsoft Entra Security Groups and understanding the capabilities and limitations of Android Enterprise Personally-Owned Work Profile devices.
+Using consistent naming conventions also helps administrators quickly distinguish Configuration Profiles from Compliance Policies, Endpoint Security policies and application deployments.
+
+![Profile Basics](screenshots/configuration-profile-basics.png)
