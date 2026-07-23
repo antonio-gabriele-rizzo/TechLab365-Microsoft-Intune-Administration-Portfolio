@@ -138,32 +138,35 @@ Providing meaningful names and descriptions makes Configuration Profiles easier 
 
 # Understanding Device Restrictions
 
-After configuring the profile information, Microsoft Intune presented the **Device Restrictions** configuration page.
+Device Restrictions are one of the most commonly used Configuration Profile templates within Microsoft Intune. They allow administrators to control how managed devices behave by enabling, disabling or enforcing specific operating system features.
 
-This page contains numerous settings that allow administrators to control various aspects of Android Enterprise devices. Depending on the enrolment type, these settings can be used to:
+The available settings vary depending on both the operating system and the enrolment method. This is particularly important when managing Android Enterprise devices because Microsoft Intune supports several different Android deployment models, each providing a different level of administrative control.
 
-- Restrict hardware features.
-- Control application behaviour.
-- Configure work profile settings.
-- Enforce password requirements.
-- Limit data sharing between personal and work profiles.
-- Disable specific operating system features.
+The three most common Android Enterprise enrolment methods are:
 
-For Corporate-Owned and Fully Managed Android Enterprise devices, Device Restrictions provide administrators with extensive management capabilities. However, the options available for **Personally-Owned Work Profile** devices are intentionally more limited.
+| Enrolment Type | Typical Device Ownership | Level of Administrative Control |
+|---------------|--------------------------|---------------------------------|
+| Personally-Owned Work Profile | Bring Your Own Device (BYOD) | Work profile only |
+| Corporate-Owned Work Profile | Company-owned device | Work profile with additional management capabilities |
+| Fully Managed | Company-owned device | Full device management |
 
-This is because Android Enterprise uses a clear separation between the user's personal data and the managed work profile. Microsoft Intune can only manage the corporate work profile and cannot control settings within the user's personal profile.
+For **Personally-Owned Work Profile** devices, Microsoft Intune only manages the corporate work profile. The user's personal applications, photographs, messages and personal settings remain outside the organisation's control.
 
-As I reviewed the available configuration categories, I found that many settings either:
+This separation provides an important balance between organisational security and user privacy. Employees can use their own devices for work while organisations retain full control over corporate applications and data without accessing personal information.
 
-- applied only to Fully Managed Android Enterprise devices,
-- applied only to Corporate-Owned Work Profile devices, or
-- were not applicable to Personally-Owned Work Profile devices.
+Because of this design, many Device Restriction settings that are available for Fully Managed Android Enterprise devices are either unavailable or not applicable to Personally-Owned Work Profile devices.
 
-Enabling restrictions that do not apply to the enrolled device would provide no practical benefit within this laboratory and could potentially interfere with future chapters of this project.
+During this laboratory, I carefully reviewed the available Device Restriction categories before deciding whether any additional configuration was appropriate.
 
-For this reason, I intentionally retained the default configuration.
+Although Microsoft Intune provides a large number of configuration options, many of them were intended for deployment scenarios that differed from my laboratory environment. Examples included restrictions relating to device-wide hardware features, operating system functionality and corporate-owned device management.
 
-This approach reflects a realistic administrative decision rather than configuring settings simply for demonstration purposes. In a production environment, administrators should only deploy restrictions that satisfy genuine business or security requirements.
+Since my objective was to demonstrate Configuration Profile deployment using an Android Enterprise Personally-Owned Work Profile device, enabling unnecessary restrictions would not have reflected a realistic deployment scenario. It could also have introduced unnecessary complications for later chapters within this project.
+
+For these reasons, I intentionally retained the default Device Restriction settings.
+
+This decision reflects an important principle of endpoint administration: administrators should configure only those settings that satisfy a genuine business, operational or security requirement. Applying unnecessary restrictions increases administrative complexity, makes troubleshooting more difficult and may negatively affect the end-user experience without providing any meaningful benefit.
+
+In production environments, Device Restrictions are typically introduced gradually as organisational requirements evolve, rather than enabling every available option simply because it exists.
 
 ---
 
