@@ -83,7 +83,7 @@ Devices
 
 The **All devices** page displays every device currently enrolled within the Microsoft Intune tenant together with important management information such as operating system, ownership, compliance status and last check-in time.
 
-![Device Inventory](screenshots/android-devices-list.png)
+![Device Inventory](screenshots/managed-devices-overview.png)
 
 ---
 
