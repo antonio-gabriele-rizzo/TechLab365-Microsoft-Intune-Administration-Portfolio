@@ -120,7 +120,7 @@ TechLab-Microsoft-Intune-Administration-Portfolio
 | 05 – Deploying Android Applications with Managed Google Play | ✅ Completed |
 | 06 – Compliance Policies | ✅ Completed |
 | 07 – Configuration Profiles | ✅ Completed |
-| 08 – Device Management | ⏳ Planned |
+| 08 – Device Management | ✅ Completed |
 | 09 – Endpoint Security | ⏳ Planned |
 | 10 – Monitoring and Reports | ⏳ Planned |
 | 11 – Troubleshooting Scenarios | ⏳ Planned |
