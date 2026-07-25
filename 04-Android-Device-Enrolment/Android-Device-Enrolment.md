@@ -85,11 +85,24 @@ This confirmed that the enrolment process had completed successfully and that th
 
 # Device Synchronisation
 
-Once enrolled, Android Enterprise devices periodically synchronise with Microsoft Intune to receive configuration changes, application deployments and policy updates.
+Once enrolled, Android Enterprise devices establish an ongoing management relationship with Microsoft Intune. Rather than communicating only during enrolment, managed devices periodically synchronise with the Intune service to exchange management information.
 
-Synchronisation occurs automatically at regular intervals, although administrators and users can also manually initiate a synchronisation when immediate updates are required. This ensures that newly assigned applications, configuration profiles and compliance policies are delivered to the device without unnecessary delay.
+During each synchronisation, the device can:
 
-Although I did not perform a manual synchronisation during this exercise, the successful device check-in shown within the Microsoft Intune Admin Center confirmed that communication between the enrolled device and the Intune service was functioning correctly.
+- Receive newly assigned applications.
+- Download Configuration Profiles.
+- Evaluate Compliance Policies.
+- Report hardware inventory.
+- Update device properties.
+- Refresh its management status.
+
+This automatic communication allows administrators to deploy new configurations without requiring users to re-enrol their devices or perform manual configuration.
+
+Although synchronisation occurs automatically at regular intervals, administrators and users can also initiate a manual synchronisation whenever immediate communication with Microsoft Intune is required. Manual synchronisation is particularly useful after deploying new applications, Compliance Policies or Configuration Profiles because it reduces the time required for the managed device to receive updated settings.
+
+During this laboratory, I did not perform a manual synchronisation because no additional policies had yet been deployed. However, the successful device check-in shown within the Microsoft Intune Admin Center confirmed that communication between the Android Enterprise device and Microsoft Intune had been established successfully.
+
+Device synchronisation becomes increasingly important throughout the remainder of this repository, where newly created applications, Compliance Policies and Configuration Profiles rely on regular communication between the enrolled device and the Microsoft Intune service.
 
 ---
 
