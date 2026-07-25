@@ -121,9 +121,8 @@ TechLab-Microsoft-Intune-Administration-Portfolio
 | 06 – Compliance Policies | ✅ Completed |
 | 07 – Configuration Profiles | ✅ Completed |
 | 08 – Device Management | ✅ Completed |
-| 09 – Endpoint Security | ⏳ Planned |
-| 10 – Monitoring and Reports | ⏳ Planned |
-| 11 – Troubleshooting Scenarios | ⏳ Planned |
+| 09 – Monitoring and Reports | ⏳ Planned |
+| 10 – Troubleshooting Scenarios | ⏳ Planned |
 
 ---
 
@@ -329,30 +328,7 @@ Manage enrolled Android devices throughout their lifecycle using Microsoft Intun
 
 ---
 
-## 09 – Endpoint Security
-
-Protect managed Android devices using Microsoft Intune security capabilities.
-
-### Topics covered
-
-- Endpoint Security overview
-- Microsoft Defender integration
-- Antivirus policies
-- Firewall policies
-- Security baselines
-- Attack Surface Reduction (overview)
-- Security recommendations
-
-### Skills developed
-
-- Endpoint protection
-- Security policy management
-- Microsoft Defender administration
-- Security hardening
-
----
-
-## 10 – Monitoring and Reports
+## 09 – Monitoring and Reports
 
 Monitor the health, compliance and deployment status of managed devices.
 
@@ -376,7 +352,7 @@ Monitor the health, compliance and deployment status of managed devices.
 
 ---
 
-## 11 – Troubleshooting Scenarios
+## 10 – Troubleshooting Scenarios
 
 Investigate and resolve common Microsoft Intune administration issues.
 
@@ -413,9 +389,8 @@ The chapters have been organised in the same sequence that an Endpoint Administr
 6. Configure device compliance policies.
 7. Deploy configuration profiles.
 8. Manage enrolled devices.
-9. Secure managed endpoints.
-10. Monitor device health and administrative reports.
-11. Troubleshoot common Microsoft Intune administration issues.
+09. Monitor device health and administrative reports.
+10. Troubleshoot common Microsoft Intune administration issues.
 
 Each chapter combines fundamental concepts with practical, hands-on exercises performed within a real Microsoft cloud laboratory, providing a structured learning path from foundational administration through to practical endpoint management.
 
