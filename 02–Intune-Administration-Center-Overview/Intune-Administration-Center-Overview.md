@@ -164,7 +164,7 @@ Common applications managed through Microsoft Intune include:
 - Microsoft Teams
 - Microsoft Authenticator
 
-Application deployment is covered in detail in **Chapter 07 – Application Deployment**.
+Application deployment is covered in detail in Chapter 05 – Deploying Android Applications with Managed Google Play.
 
 ![Apps Overview](screenshots/intune-apps-overview.png)
 
@@ -185,7 +185,7 @@ Examples include:
 
 Using centrally managed security policies helps organisations maintain a consistent security standard across all managed devices.
 
-Endpoint Security will be explored further in **Chapter 09 – Endpoint Security**.
+Although Microsoft Intune includes a comprehensive Endpoint Security section, Android Enterprise Personally-Owned Work Profile devices expose only a limited subset of these capabilities. The remaining chapters of this repository instead focus on Compliance Policies, Configuration Profiles, Device Management, Monitoring and Troubleshooting.
 
 ![Endpoint Security Overview](screenshots/intune-endpoint-security-overview.png)
 
