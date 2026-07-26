@@ -138,23 +138,6 @@ In this project, I initiated a manual synchronisation from the Microsoft Intune 
 
 ---
 
-## Interview Tip
-
-A common interview question is:
-
-> **"What is the first action you perform when an Intune-managed device does not appear to have received a policy or application?"**
-
-A strong answer is to describe a structured troubleshooting process rather than immediately recreating policies or reassigning applications. For example:
-
-- Confirm that the device is enrolled correctly.
-- Verify the compliance status.
-- Review the assigned policies or applications.
-- Check the last device check-in time.
-- Perform a manual synchronisation.
-- Re-evaluate the deployment status after the device reports back.
-
-This demonstrates that you understand Microsoft Intune troubleshooting from an operational perspective and can identify reporting delays before assuming a deployment failure.
-
 # Confirming the Resolution
 
 Following the manual synchronisation, Microsoft Intune successfully refreshed the application inventory reported by the Android Enterprise device. The applications that had previously displayed a status of **Waiting for installation status** were now reported as **Installed**.
