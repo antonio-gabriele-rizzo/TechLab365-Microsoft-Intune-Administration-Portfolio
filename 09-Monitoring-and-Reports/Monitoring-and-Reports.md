@@ -75,7 +75,7 @@ From this area administrators can:
 
 As Microsoft Intune environments grow, these reports become increasingly important because they provide visibility across hundreds or thousands of managed endpoints from a single dashboard.
 
-![Reports Overview](images/reports-overview.png)
+![Reports Overview](screenshots/reports-overview.png)
 
 *Figure 9.1 – Microsoft Intune Reports workspace providing access to monitoring and reporting features.*
 
@@ -94,7 +94,7 @@ This centralised view is particularly valuable in enterprise environments where 
 
 In my lab environment, the Device Compliance report provides an overview of the current compliance state of managed Android Enterprise devices. Since only a single Android device is enrolled, the report reflects the status of this test environment while demonstrating the same reporting capabilities used in production deployments.
 
-![Device Compliance Report](images/device-compliance-report.png)
+![Device Compliance Report](screenshots/device-compliance-report.png)
 
 *Figure 9.2 – Microsoft Intune Device Compliance report displaying organisation-wide compliance information.*
 
@@ -118,7 +118,7 @@ In larger environments, these reports help administrators identify devices that 
 
 Because this laboratory contains a limited number of managed devices, the report does not contain extensive deployment data. Nevertheless, it demonstrates the reporting interface that administrators use to monitor Configuration Profile deployment across enterprise environments.
 
-![Configuration Profile Monitoring](images/configuration-profile-monitoring.png)
+![Configuration Profile Monitoring](screenshots/configuration-profile-monitoring.png)
 
 *Figure 9.3 – Monitoring Configuration Profile deployment through Microsoft Intune reporting.*
 
@@ -142,7 +142,7 @@ This information enables administrators to quickly determine whether application
 
 In this project, several Managed Google Play applications—including Google Photos, Microsoft Intune, Microsoft Authenticator and Microsoft Outlook—were deployed during Chapter 5. The monitoring report confirms that these applications were processed successfully without installation failures, demonstrating a successful application deployment workflow.
 
-![Application Install Status](images/application-install-status.png)
+![Application Install Status](screenshots/application-install-status.png)
 
 *Figure 9.4 – Managed application deployment status monitored through Microsoft Intune.*
 
@@ -183,7 +183,7 @@ This information enables administrators to quickly verify that a device has been
 
 Throughout this project, the Android Enterprise device enrolled in Chapter 4 has been used to validate application deployment, Compliance Policies and Configuration Profiles. Reviewing the device overview confirms that the device remains compliant and continues reporting successfully to Microsoft Intune.
 
-![Device Monitoring Overview](images/device-monitoring-overview.png)
+![Device Monitoring Overview](screenshots/device-monitoring-overview.png)
 
 *Figure 9.5 – Individual Android Enterprise device overview displaying key management and monitoring information.*
 
@@ -205,7 +205,7 @@ This level of reporting is particularly useful when investigating devices that a
 
 Within my laboratory environment, the enrolled Android Enterprise device successfully satisfies both the custom Android Enterprise Compliance Policy created in Chapter 6 and the default device compliance policy automatically applied by Microsoft Intune. This confirms that the device continues to meet the security requirements configured earlier in the project.
 
-![Device Compliance Monitoring](images/device-check-in-report.png)
+![Device Compliance Monitoring](screenshots/device-check-in-report.png)
 
 *Figure 9.6 – Compliance policy evaluation for an individual managed Android Enterprise device.*
 
