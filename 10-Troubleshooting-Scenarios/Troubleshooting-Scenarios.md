@@ -1,4 +1,4 @@
-# Chapter 10 – Troubleshooting Scenarios
+# 10 – Troubleshooting Scenarios
 
 ## Introduction
 
@@ -10,7 +10,7 @@ This chapter demonstrates a practical troubleshooting workflow using the Android
 
 ---
 
-## Learning Objectives
+## Objectives
 
 By completing this chapter, I learned how to:
 
