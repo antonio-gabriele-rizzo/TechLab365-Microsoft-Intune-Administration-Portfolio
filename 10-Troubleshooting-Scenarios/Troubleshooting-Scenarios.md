@@ -58,7 +58,7 @@ Reviewing this information allows administrators to confirm that the device is c
 
 During this project, the Android Enterprise device remained compliant and successfully connected to Microsoft Intune, providing a solid starting point for investigating subsequent application reporting behaviour.
 
-![Managed Device Overview](images/device-overview-troubleshooting.png)
+![Managed Device Overview](screenshots/device-overview-troubleshooting.png)
 
 *Figure 10.1 – Reviewing the managed Android Enterprise device before beginning the troubleshooting process.*
 
@@ -80,7 +80,7 @@ Information available on this page includes:
 
 In this laboratory environment, both the custom Android Enterprise Compliance Policy created in Chapter 6 and the default Microsoft Intune Compliance Policy reported a **Compliant** state. This confirmed that the troubleshooting scenario investigated later in this chapter was unrelated to device compliance and instead focused on application reporting.
 
-![Device Compliance Troubleshooting](images/device-compliance-troubleshooting.png)
+![Device Compliance Troubleshooting](screenshots/device-compliance-troubleshooting.png)
 
 *Figure 10.2 – Reviewing Compliance Policy evaluation for the managed Android Enterprise device.*
 
@@ -101,7 +101,7 @@ During testing in my laboratory environment, Microsoft Intune initially reported
 
 The screenshot below captures the initial state before any troubleshooting actions were performed.
 
-![Managed Applications Waiting for Status](images/managed-applications-pending-status.png)
+![Managed Applications Waiting for Status](screenshots/managed-applications-pending-status.png)
 
 *Figure 10.3 – Required applications assigned to the device while Microsoft Intune is still waiting for the installation status.*
 
@@ -132,7 +132,7 @@ From the device overview page, Microsoft Intune provides a **Sync** action that 
 
 In this project, I initiated a manual synchronisation from the Microsoft Intune Admin Center and also performed a synchronisation from the Company Portal application on the Android device. This ensured that both the management service and the managed device exchanged the latest configuration and application status information.
 
-![Manual Device Synchronisation](images/device-sync-action.png)
+![Manual Device Synchronisation](screenshots/device-sync-action.png)
 
 *Figure 10.4 – Initiating a manual synchronisation to refresh device information and application reporting.*
 
@@ -167,7 +167,7 @@ Before modifying assignments or recreating applications, administrators should a
 
 The screenshot below shows the successful result after completing the synchronisation process.
 
-![Managed Applications Installed](images/managed-applications-installed.png)
+![Managed Applications Installed](screenshots/managed-applications-installed.png)
 
 *Figure 10.5 – Application installation status successfully updated after the managed device synchronised with Microsoft Intune.*
 
@@ -192,7 +192,7 @@ Performing this final validation ensures that the troubleshooting process has ac
 
 For this laboratory environment, the Managed Apps page confirmed that the required applications had been successfully deployed and reported correctly to Microsoft Intune, demonstrating a successful end-to-end deployment and reporting workflow.
 
-![Managed Applications](images/managed-applications-troubleshooting.png)
+![Managed Applications](screenshots/managed-applications-troubleshooting.png)
 
 *Figure 10.6 – Final verification of managed applications after completing the troubleshooting process.*
 
