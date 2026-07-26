@@ -142,8 +142,6 @@ Using consistent naming conventions also helps administrators quickly distinguis
 
 # Understanding Device Restrictions
 
-# Understanding Device Restrictions
-
 Device Restrictions are one of the most commonly used Configuration Profile templates within Microsoft Intune. They allow administrators to control how managed devices behave by enabling, disabling or enforcing specific operating system features.
 
 The available settings vary depending on both the operating system and the enrolment method. This is particularly important when managing Android Enterprise devices because Microsoft Intune supports several different Android deployment models, each providing a different level of administrative control.
