@@ -8,7 +8,7 @@ Unlike Compliance Policies, which determine whether a device meets an organisati
 
 Microsoft Intune supports a wide range of Configuration Profile types, including device restrictions, Wi-Fi profiles, VPN configurations, certificates, email settings, endpoint protection and custom policies. The available settings vary depending on the operating system and enrolment method being used.
 
-In this chapter, I created an Android Enterprise Device Restrictions Configuration Profile for a Personally-Owned Work Profile device. Rather than applying unnecessary restrictions that could interfere with later laboratory exercises, I intentionally retained the default configuration while demonstrating the complete deployment workflow, including profile creation, assignment and verification.
+In this chapter, I created an Android Enterprise Device Restrictions Configuration Profile for a Personally-Owned Work Profile device. Rather than applying unnecessary restrictions that could interfere with later laboratory exercises, I intentionally left the default configuration while demonstrating the complete deployment workflow, including profile creation, assignment and verification.
 
 ---
 
