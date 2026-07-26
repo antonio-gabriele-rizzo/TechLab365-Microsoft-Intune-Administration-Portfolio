@@ -1,37 +1,40 @@
 # TechLab – Microsoft Intune Administration Portfolio
 
 ![Microsoft Intune](https://img.shields.io/badge/Microsoft-Intune-0078D4?style=for-the-badge&logo=microsoft)
-![Status](https://img.shields.io/badge/Project-In%20Progress-yellow?style=for-the-badge)
-![Learning Portfolio](https://img.shields.io/badge/Learning-Portfolio-success?style=for-the-badge)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Android%20Enterprise-success?style=for-the-badge)
+![Documentation](https://img.shields.io/badge/Documentation-Markdown-blue?style=for-the-badge)
 
 ---
 
 # Project Overview
 
-This repository documents my hands-on Microsoft Intune Administration laboratory, built within a Microsoft cloud environment using Microsoft Intune, Microsoft Entra ID and a physical Android device.
+This repository documents my hands-on Microsoft Intune Administration laboratory, developed within a Microsoft cloud environment using Microsoft Intune, Microsoft Entra ID and a physical Android Enterprise device.
 
-The project demonstrates practical endpoint management skills by configuring Microsoft Intune from the ground up, enrolling Android Enterprise devices, deploying applications through Managed Google Play, configuring compliance and security policies, monitoring managed devices, and troubleshooting common administrative scenarios.
+The project demonstrates the complete lifecycle of Android Enterprise device management, beginning with the creation of a Microsoft Intune tenant and progressing through device enrolment, application deployment, compliance management, configuration profiles, device administration, monitoring and troubleshooting.
 
-Rather than simply describing Microsoft Intune features, this portfolio documents the complete administrative workflow followed by IT Support Engineers, Microsoft 365 Administrators, Endpoint Administrators and Systems Administrators within a modern enterprise environment.
+Rather than simply describing Microsoft Intune features, this repository documents the practical tasks performed by an Endpoint Administrator when deploying and managing Android Enterprise devices in a modern cloud-based environment.
 
-This repository forms the third project within my TechLab Microsoft Cloud Administration Portfolio and builds directly upon the Microsoft 365 Administration and Microsoft Entra ID Administration repositories.
+The laboratory was built using an existing Microsoft 365 tenant created during my previous Microsoft 365 Administration and Microsoft Entra ID Administration projects, demonstrating how Microsoft cloud services integrate to provide a complete endpoint management solution.
 
 ---
 
 # Project Objectives
 
-Throughout this project, I aim to:
+Throughout this project, I developed practical experience with Microsoft Intune by completing a series of hands-on administrative exercises.
 
-- Learn Microsoft Intune administration through practical, hands-on exercises.
-- Understand Mobile Device Management (MDM).
-- Understand Mobile Application Management (MAM).
-- Enrol and manage Android Enterprise devices.
-- Deploy and manage Android applications.
-- Configure compliance policies.
-- Deploy configuration profiles.
-- Perform remote device administration.
-- Configure endpoint security.
-- Monitor managed devices.
+The primary objectives of this repository were to:
+
+- Understand Microsoft Intune architecture and licensing.
+- Configure a Microsoft Intune laboratory environment.
+- Explore the Microsoft Intune Admin Center.
+- Prepare Microsoft Entra users and Security Groups.
+- Enrol Android Enterprise devices.
+- Deploy Android applications through Managed Google Play.
+- Configure Compliance Policies.
+- Deploy Configuration Profiles.
+- Manage enrolled Android Enterprise devices.
+- Monitor device health and deployment status.
 - Troubleshoot common Microsoft Intune administration issues.
 - Produce professional technical documentation suitable for a GitHub portfolio.
 
@@ -39,37 +42,41 @@ Throughout this project, I aim to:
 
 # Skills Demonstrated
 
-Throughout this project, I demonstrate practical experience in:
+Throughout this project I demonstrate practical experience with:
 
 - Microsoft Intune Administration
 - Endpoint Management
 - Mobile Device Management (MDM)
 - Mobile Application Management (MAM)
 - Android Enterprise Administration
-- Device Enrolment
+- Microsoft Entra ID Integration
+- Android Device Enrolment
+- Managed Google Play
 - Application Deployment
 - Compliance Policy Administration
 - Configuration Profile Deployment
-- Endpoint Security
-- Device Monitoring
-- Reporting
+- Device Management
+- Monitoring and Reporting
 - Troubleshooting
 - Technical Documentation
+- GitHub Portfolio Development
 
 ---
 
 # Technologies Used
 
-- Microsoft Intune Plan 1
-- Microsoft Entra ID
-- Microsoft 365 Admin Center
-- Android Smartphone
-- Microsoft Company Portal
-- Microsoft Authenticator
-- Managed Google Play
-- Microsoft Graph PowerShell (where applicable)
-- GitHub
-- Markdown
+| Technology | Purpose |
+|------------|---------|
+| Microsoft Intune Plan 1 | Cloud endpoint management |
+| Microsoft Entra ID | Identity and access management |
+| Microsoft 365 Admin Center | Tenant administration |
+| Microsoft Intune Admin Center | Endpoint administration |
+| Android Enterprise | Mobile device management platform |
+| Microsoft Company Portal | Device enrolment |
+| Managed Google Play | Enterprise Android application deployment |
+| Microsoft Authenticator | User authentication |
+| GitHub | Version control |
+| Markdown | Technical documentation |
 
 ---
 
@@ -79,9 +86,11 @@ Throughout this project, I demonstrate practical experience in:
 |-----------|---------|
 | Tenant | TechLab |
 | Identity Platform | Microsoft Entra ID |
-| Management Platform | Microsoft Intune |
+| Endpoint Management | Microsoft Intune Plan 1 |
 | Device Platform | Android Enterprise |
-| Administration Portal | Microsoft Intune Admin Center |
+| Enrolment Method | Personally-Owned Work Profile (BYOD) |
+| Test Device | Android Smartphone |
+| Application Store | Managed Google Play |
 | Documentation | Markdown |
 | Version Control | GitHub |
 
@@ -97,358 +106,340 @@ TechLab-Microsoft-Intune-Administration-Portfolio
 ├── 01-Creating-the-Intune-Lab-Environment
 ├── 02-Intune-Administration-Center-Overview
 ├── 03-User-and-Group-Preparation
-├── 04-Android-Device-enrolment
+├── 04-Android-Device-Enrolment
 ├── 05-Deploying-Android-Applications-with-Managed-Google-Play
 ├── 06-Compliance-Policies
 ├── 07-Configuration-Profiles
 ├── 08-Device-Management
-├── 09-Endpoint-Security
-├── 10-Monitoring-and-Reports
-└── 11-Troubleshooting-Scenarios
+├── 09-Monitoring-and-Reports
+└── 10-Troubleshooting-Scenarios
 ```
 
 ---
 
-# Project Progress
+# Repository Statistics
 
-| Chapter | Status |
-|---------|--------|
-| 01 – Creating the Intune Lab Environment | ✅ Completed |
-| 02 – Intune Administration Center Overview | ✅ Completed |
-| 03 – User and Group Preparation | ✅ Completed |
-| 04 – Android Device Enrollment | ✅ Completed |
-| 05 – Deploying Android Applications with Managed Google Play | ✅ Completed |
-| 06 – Compliance Policies | ✅ Completed |
-| 07 – Configuration Profiles | ✅ Completed |
-| 08 – Device Management | ✅ Completed |
-| 09 – Monitoring and Reports | ⏳ Planned |
-| 10 – Troubleshooting Scenarios | ⏳ Planned |
+| Metric | Value |
+|---------|------:|
+| Chapters | 10 |
+| Screenshots | 60+ |
+| Hands-on Exercises | 10 |
+| Managed Platform | Android Enterprise |
+| Documentation Format | Markdown |
+| Project Status | ✅ Completed |
 
 ---
 
-# Section Overview
+# Chapter Overview
 
 ## 01 – Creating the Intune Lab Environment
 
-Create a Microsoft Intune laboratory using an existing Microsoft 365 tenant.
+The repository begins by creating a dedicated Microsoft Intune laboratory using an existing Microsoft 365 tenant. In this chapter, I activate a Microsoft Intune Plan 1 Trial subscription, review the licensing requirements and verify that the Microsoft Intune Admin Center is available for endpoint administration.
 
 ### Topics covered
 
 - Microsoft Intune overview
+- Microsoft cloud architecture
 - Licensing requirements
 - Microsoft Intune Plan 1 Trial
-- Creating the trial
+- Creating the trial subscription
 - Using an existing Microsoft 365 tenant
 - Verifying the subscription
-- Accessing the Microsoft Intune Admin Center
+- Opening the Microsoft Intune Admin Center
 
 ### Skills developed
 
 - Microsoft cloud administration
 - Tenant provisioning
-- Licensing
-- Microsoft Intune fundamentals
-- Administrative portal familiarisation
+- Microsoft Intune licensing
+- Endpoint management fundamentals
 
 ---
 
 ## 02 – Intune Administration Center Overview
 
-Explore the Microsoft Intune Admin Center and become familiar with the main administrative areas.
+Before managing endpoints, it is essential to understand the layout of the Microsoft Intune Admin Center. This chapter introduces the primary administrative areas used throughout the remainder of the repository, providing an overview of the portal and its key management features.
 
 ### Topics covered
 
-- Home
 - Dashboard
 - Devices
 - Users
 - Groups
-- Apps
-- Endpoint Security
+- Applications
 - Reports
 - Tenant Administration
 
 ### Skills developed
 
 - Portal navigation
-- Administrative interface
+- Microsoft Intune administration
 - Endpoint management concepts
-- Microsoft cloud administration
+- Administrative interface familiarisation
 
 ---
 
 ## 03 – User and Group Preparation
 
-Prepare Microsoft Entra identities before enrolling managed devices.
+Microsoft Intune relies on Microsoft Entra ID for user identities and Security Groups. This chapter reviews the existing users and Security Groups created during the Microsoft Entra ID laboratory and confirms that the environment is correctly prepared for device enrolment and policy assignment.
 
 ### Topics covered
 
-- Review existing users
-- Review security groups
-- Licence assignment
-- Administrative permissions
-- Role-Based Access Control (RBAC)
-- Preparing users for enrolment
+- Microsoft Entra ID users
+- Microsoft Intune subscription verification
+- Security Groups
+- Group membership
+- Administrative roles
+- Environment readiness
 
 ### Skills developed
 
-- Identity administration
-- Role management
-- Licence administration
-- Access management
+- Identity management
+- Security Group administration
+- Microsoft Entra ID integration
+- Administrative planning
 
 ---
 
 ## 04 – Android Device Enrolment
 
-Enrol a physical Android device into Microsoft Intune using Android Enterprise and Microsoft Company Portal.
+This chapter demonstrates the enrolment of a physical Android smartphone using the **Personally-Owned Work Profile (BYOD)** deployment model. Microsoft Company Portal is used to register the device, create the Android Enterprise Work Profile and establish communication with Microsoft Intune.
 
 ### Topics covered
 
-- Supported Android enrolment methods
-- Company Portal installation
-- Android device registration
-- Android device enrolment
+- Android Enterprise enrolment methods
+- Microsoft Company Portal
+- Device registration
+- Android Work Profile creation
 - Device synchronisation
-- Personally owned devices
-- Corporate-owned devices
-- Device properties overview
-- Device compliance status overview
+- Device properties
+- Compliance verification
 
 ### Skills developed
 
 - Android Enterprise administration
+- Device enrolment
+- BYOD deployment
 - Mobile Device Management (MDM)
-- Endpoint enrolment
-- Device lifecycle management
+
 ---
 
 ## 05 – Deploying Android Applications with Managed Google Play
 
-Deploy Android Enterprise applications to managed devices using Microsoft Intune and Managed Google Play.
+Applications are deployed to the enrolled Android Enterprise device using Managed Google Play. This chapter demonstrates how enterprise applications are approved, synchronised and assigned through Microsoft Intune before verifying successful deployment on the managed device.
 
 ### Topics covered
 
-- Managed Google Play integration
-- Android Enterprise applications
-- Managed Google Play Store
-- Importing Android applications
-- Creating Microsoft Entra deployment groups
+- Managed Google Play
+- Connecting Google Play
+- Approving applications
+- Synchronising applications
 - Application assignments
-- Required deployments
-- Synchronising Managed Google Play
-- Verifying application deployment
-- Troubleshooting application synchronisation
+- Installation verification
 
 ### Skills developed
 
-- Android application deployment
-- Managed Google Play administration
 - Mobile Application Management (MAM)
-- Microsoft Entra group administration
-- Application lifecycle management
+- Application deployment
+- Managed Google Play administration
+- Android application lifecycle management
 
 ---
 
 ## 06 – Compliance Policies
 
-Configure compliance requirements that determine whether managed Android devices meet organisational security standards.
+Compliance Policies are one of the core security features within Microsoft Intune. In this chapter, I create and deploy an Android Enterprise Compliance Policy to evaluate whether enrolled devices meet the organisation's security requirements. The policy is then assigned, synchronised and verified using the enrolled Android device.
 
 ### Topics covered
 
-- Compliance policies
-- Android Enterprise compliance settings
-- PIN requirements
-- Password complexity
-- Device encryption
-- Root detection
-- Minimum Android version
-- Compliance evaluation
-- Non-compliant devices
-- Compliance reports
+- Compliance Policy overview
+- Android Enterprise Compliance Policies
+- Creating a Compliance Policy
+- Configuring compliance settings
+- Policy assignments
+- Device synchronisation
+- Compliance verification
 
 ### Skills developed
 
-- Compliance administration
-- Device security
-- Policy management
-- Endpoint governance
+- Endpoint compliance management
+- Security policy administration
+- Android Enterprise compliance
+- Microsoft Intune policy deployment
 
 ---
 
 ## 07 – Configuration Profiles
 
-Deploy configuration settings that standardise and secure managed Android devices.
+Configuration Profiles enable administrators to standardise device settings across managed endpoints. This chapter demonstrates how to create and deploy an Android Enterprise Device Restrictions profile, assign it to a Security Group and verify that the profile has been successfully delivered to the enrolled device.
 
 ### Topics covered
 
-- Configuration Profiles
-- Device restrictions
-- Password configuration
-- Security settings
-- Wi-Fi profiles
-- VPN overview
-- Email profiles
-- Profile assignment
+- Configuration Profile overview
+- Android Enterprise Device Restrictions
+- Creating a Configuration Profile
+- Device restriction settings
+- Policy assignments
 - Profile deployment
-- Troubleshooting profile deployment
+- Deployment verification
 
 ### Skills developed
 
-- Configuration management
-- Endpoint configuration
-- Profile deployment
-- Microsoft Intune administration
+- Configuration Profile administration
+- Device configuration management
+- Android Enterprise device restrictions
+- Policy deployment and validation
 
 ---
 
 ## 08 – Device Management
 
-Manage enrolled Android devices throughout their lifecycle using Microsoft Intune.
+After devices have been enrolled and configured, administrators must manage them throughout their lifecycle. This chapter explores the day-to-day management capabilities available within Microsoft Intune, including reviewing enrolled devices, examining hardware information, performing remote administrative actions and managing individual Android Enterprise devices.
 
 ### Topics covered
 
+- Managed device overview
 - Device inventory
 - Device properties
 - Hardware information
-- Compliance status
-- Remote synchronisation
-- Restart device
-- Rename device
-- Retire device
-- Wipe device
-- Delete device
+- Remote device actions
+- Managed applications
+- Device lifecycle management
 
 ### Skills developed
 
-- Device administration
-- Remote endpoint management
-- Endpoint lifecycle management
-- Mobile device administration
+- Endpoint administration
+- Device lifecycle management
+- Remote device management
+- Android Enterprise administration
 
 ---
 
 ## 09 – Monitoring and Reports
 
-Monitor the health, compliance and deployment status of managed devices.
+Monitoring is essential for verifying that applications, Compliance Policies and Configuration Profiles have been successfully deployed. This chapter explores the reporting capabilities available within Microsoft Intune and demonstrates how administrators can monitor device compliance, application deployment and the health of managed Android Enterprise devices.
 
 ### Topics covered
 
-- Dashboard
-- Compliance reports
-- Device reports
-- Application reports
-- Device inventory
-- Monitoring dashboards
-- Exporting reports
-- Troubleshooting using reports
+- Reports workspace
+- Device Compliance reports
+- Configuration Profile monitoring
+- Application deployment monitoring
+- Managed device monitoring
+- Device-level compliance reporting
 
 ### Skills developed
 
-- Monitoring
-- Reporting
-- Administrative reporting
-- Endpoint analytics
+- Microsoft Intune monitoring
+- Reporting and diagnostics
+- Compliance reporting
+- Deployment validation
+- Endpoint monitoring
 
 ---
 
 ## 10 – Troubleshooting Scenarios
 
-Investigate and resolve common Microsoft Intune administration issues.
+The repository concludes with a practical troubleshooting chapter based on issues encountered while building the laboratory. Rather than using simulated examples, this chapter documents real Microsoft Intune administration scenarios, demonstrating how to investigate reporting delays, verify Compliance Policies, troubleshoot Managed Applications and perform manual device synchronisation.
 
 ### Topics covered
 
-- Device enrolment failures
-- Device synchronisation issues
-- Compliance failures
-- Configuration profile deployment issues
-- Application deployment failures
-- Company Portal sign-in issues
-- Administrative troubleshooting
+- Troubleshooting methodology
+- Device investigation
+- Compliance validation
+- Managed Application troubleshooting
+- Manual device synchronisation
+- Verifying successful remediation
 
 ### Skills developed
 
-- Troubleshooting methodology
-- Service Desk procedures
+- Microsoft Intune troubleshooting
 - Root cause analysis
-- Microsoft Intune support
+- Endpoint diagnostics
+- Application deployment troubleshooting
+- Operational support
 
 ---
 
-# Repository Learning Path
+# Learning Outcomes
 
-This repository follows the typical lifecycle of Microsoft Intune administration within an enterprise environment.
+By completing this repository, I gained practical experience across the complete Android Enterprise administration lifecycle using Microsoft Intune.
 
-The chapters have been organised in the same sequence that an Endpoint Administrator would typically perform administrative tasks when deploying Microsoft Intune from a new tenant through to day-to-day endpoint management.
+The key learning outcomes include:
 
-1. Create and configure the Microsoft Intune environment.
-2. Become familiar with the Microsoft Intune Admin Center.
-3. Prepare users and security groups.
-4. Enrol Android Enterprise devices.
-5. Deploy Android applications using Managed Google Play.
-6. Configure device compliance policies.
-7. Deploy configuration profiles.
-8. Manage enrolled devices.
-09. Monitor device health and administrative reports.
-10. Troubleshoot common Microsoft Intune administration issues.
-
-Each chapter combines fundamental concepts with practical, hands-on exercises performed within a real Microsoft cloud laboratory, providing a structured learning path from foundational administration through to practical endpoint management.
+- Understanding the architecture of Microsoft Intune and its integration with Microsoft Entra ID and Microsoft 365.
+- Configuring a Microsoft Intune tenant using Microsoft Intune Plan 1.
+- Navigating the Microsoft Intune Admin Center and understanding its administrative structure.
+- Preparing Microsoft Entra ID users and Security Groups for endpoint management.
+- Enrolling Android Enterprise devices using the Personally-Owned Work Profile (BYOD) deployment model.
+- Deploying Android applications through Managed Google Play.
+- Creating and assigning Compliance Policies to managed devices.
+- Deploying Configuration Profiles to standardise Android Enterprise settings.
+- Managing enrolled devices throughout their lifecycle using Microsoft Intune.
+- Monitoring compliance, application deployment and device health through Microsoft Intune reports.
+- Applying a structured troubleshooting methodology to investigate and resolve common administration issues.
+- Producing professional technical documentation suitable for a GitHub portfolio.
 
 ---
 
-# Portfolio Progression
+# Repository Prerequisites
 
-This repository forms part of a wider Microsoft Cloud Administration portfolio documenting my progression across Microsoft's cloud technologies.
+To reproduce this laboratory, the following components are recommended:
 
-### Completed repositories
+- Microsoft 365 tenant
+- Microsoft Entra ID tenant
+- Microsoft Intune Plan 1 Trial (or equivalent licence)
+- Global Administrator account
+- Android smartphone compatible with Android Enterprise
+- Internet connection
+- Microsoft Company Portal
+- Managed Google Play
+- Modern web browser
 
-- TechLab – Microsoft 365 Administration Portfolio
-- TechLab – Microsoft Entra ID Administration Portfolio
+Although the laboratory uses a trial subscription, the administrative workflows demonstrated throughout this repository are directly applicable to production Microsoft Intune environments.
 
-### Current repository
+---
 
-- TechLab – Microsoft Intune Administration Portfolio
+# Related Repositories
 
-This repository builds upon the identity and Microsoft 365 administration skills developed in the previous projects by introducing enterprise endpoint management through Microsoft Intune and Android Enterprise.
+This repository forms part of my Microsoft Cloud Administration learning portfolio and builds upon the previous projects:
 
-Together, these repositories demonstrate practical experience across:
+- **TechLab – Microsoft 365 Administration Portfolio**
+- **TechLab – Microsoft Entra ID Administration Portfolio**
+- **TechLab – Microsoft Intune Administration Portfolio** *(this repository)*
+
+Together, these repositories demonstrate the progression from Microsoft 365 tenant administration and identity management through to modern endpoint management using Microsoft Intune.
+
+---
+
+# Conclusion
+
+This repository documents the complete lifecycle of managing Android Enterprise devices using Microsoft Intune, from preparing the cloud environment through to monitoring and troubleshooting managed endpoints.
+
+By combining Microsoft Entra ID, Microsoft Intune and Android Enterprise, I created a practical laboratory that demonstrates the day-to-day responsibilities of an Endpoint Administrator working within a modern Microsoft cloud environment.
+
+Rather than focusing solely on product features, the repository follows a structured administrative workflow, showing how devices are enrolled, applications are deployed, security policies are enforced, configuration settings are applied, devices are monitored and operational issues are investigated using Microsoft Intune.
+
+Completing this project has strengthened my understanding of enterprise endpoint management while reinforcing best practices for technical documentation and GitHub portfolio development.
+
+---
+
+## Author
+
+**Antonio Gabriele Rizzo**
+
+GitHub Portfolio – Microsoft Cloud Administration Learning Series
 
 - Microsoft 365 Administration
 - Microsoft Entra ID Administration
 - Microsoft Intune Administration
-- Identity and Access Management (IAM)
-- Endpoint Management
-- Mobile Device Management (MDM)
-- Mobile Application Management (MAM)
-
-Future repositories will continue expanding the TechLab environment with technologies including Windows Server, Active Directory, Group Policy, PowerShell and Jamf Pro.
 
 ---
 
-# Disclaimer
+## License
 
-This repository has been created exclusively for educational purposes and to demonstrate practical Microsoft Intune administration skills.
+This project is published for educational and portfolio purposes.
 
-The Microsoft Intune environment documented throughout this repository is a personal laboratory environment and does not contain production data.
+The documentation is based on hands-on experience gained while building a Microsoft Intune laboratory using Microsoft Intune Plan 1, Microsoft Entra ID and Android Enterprise.
 
-All users, groups, devices, applications and administrative scenarios have been created solely for learning, technical documentation and portfolio development.
-
-Any organisation names, user accounts and configuration examples shown throughout the documentation are used only within this personal lab environment.
-
----
-
-# Author
-
-**Antonio Gabriele Rizzo**
-
-IT Support • Microsoft 365 Administration • Microsoft Entra ID • Microsoft Intune • Networking • CompTIA A+
-
----
-
-**Repository Status:** 🚧 In Progress
-
-This repository is being developed chapter by chapter using a live Microsoft Intune environment and a physical Android Enterprise device.
-
-Each chapter documents my learning journey through practical exercises, real-world administrative scenarios, screenshots and technical documentation designed to demonstrate the skills expected of a Junior Microsoft Intune Administrator, Endpoint Administrator or IT Support Engineer.
-
-As additional chapters are completed, this repository will continue evolving into a comprehensive reference covering the administration of Microsoft Intune within a modern enterprise environment.
+Microsoft, Microsoft Intune, Microsoft Entra ID, Microsoft 365 and Android Enterprise are trademarks of their respective owners.
