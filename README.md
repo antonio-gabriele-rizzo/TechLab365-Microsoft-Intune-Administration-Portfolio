@@ -1,9 +1,10 @@
-# TechLab – Microsoft Intune Administration Portfolio
+<p align="center">
+  <img src="logo/techlab365-logo.png" alt="TechLab365" width="250">
+</p>
 
-![Microsoft Intune](https://img.shields.io/badge/Microsoft-Intune-0078D4?style=for-the-badge&logo=microsoft)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen?style=for-the-badge)
-![Platform](https://img.shields.io/badge/Platform-Android%20Enterprise-success?style=for-the-badge)
-![Documentation](https://img.shields.io/badge/Documentation-Markdown-blue?style=for-the-badge)
+<p align="center">
+  <img src="logo/intune-administration-title.png" alt="Microsoft Intune Administration Portfolio">
+</p>
 
 ---
 
@@ -13,15 +14,15 @@ This repository documents my hands-on Microsoft Intune Administration laboratory
 
 The project demonstrates the complete lifecycle of Android Enterprise device management, beginning with the creation of a Microsoft Intune tenant and progressing through device enrolment, application deployment, compliance management, configuration profiles, device administration, monitoring and troubleshooting.
 
-Rather than simply describing Microsoft Intune features, this repository documents the practical tasks performed by an Endpoint Administrator when deploying and managing Android Enterprise devices in a modern cloud-based environment.
+Rather than simply describing Microsoft Intune features, every chapter documents practical administrative activities performed while building a working Microsoft Intune environment. Each exercise combines technical explanations with annotated screenshots, demonstrating the day-to-day responsibilities of an Endpoint Administrator within a modern Microsoft cloud infrastructure.
 
-The laboratory was built using an existing Microsoft 365 tenant created during my previous Microsoft 365 Administration and Microsoft Entra ID Administration projects, demonstrating how Microsoft cloud services integrate to provide a complete endpoint management solution.
+This repository represents the third project within my **TechLab365 Microsoft Cloud Administration Portfolio**, building upon the Microsoft 365 Administration and Microsoft Entra ID Administration repositories to demonstrate the progression from tenant administration and identity management to modern endpoint management using Microsoft Intune.
 
 ---
 
 # Project Objectives
 
-Throughout this project, I developed practical experience with Microsoft Intune by completing a series of hands-on administrative exercises.
+Throughout this project, I developed practical experience with Microsoft Intune administration by completing a series of structured hands-on exercises.
 
 The primary objectives of this repository were to:
 
@@ -99,9 +100,13 @@ Throughout this project I demonstrate practical experience with:
 # Repository Structure
 
 ```text
-TechLab-Microsoft-Intune-Administration-Portfolio
+TechLab365-Microsoft-Intune-Administration-Portfolio
 │
 ├── README.md
+│
+├── logo
+│   ├── techlab365-logo.png
+│   └── intune-administration-title.png
 │
 ├── 01-Creating-the-Intune-Lab-Environment
 ├── 02-Intune-Administration-Center-Overview
@@ -114,19 +119,6 @@ TechLab-Microsoft-Intune-Administration-Portfolio
 ├── 09-Monitoring-and-Reports
 └── 10-Troubleshooting-Scenarios
 ```
-
----
-
-# Repository Statistics
-
-| Metric | Value |
-|---------|------:|
-| Chapters | 10 |
-| Screenshots | 60+ |
-| Hands-on Exercises | 10 |
-| Managed Platform | Android Enterprise |
-| Documentation Format | Markdown |
-| Project Status | ✅ Completed |
 
 ---
 
@@ -395,20 +387,23 @@ To reproduce this laboratory, the following components are recommended:
 - Microsoft Company Portal
 - Managed Google Play
 - Modern web browser
+- GitHub account (for documentation and version control)
 
-Although the laboratory uses a trial subscription, the administrative workflows demonstrated throughout this repository are directly applicable to production Microsoft Intune environments.
+Although this laboratory was developed using a Microsoft Intune Plan 1 Trial subscription, the administrative workflows demonstrated throughout this repository are directly applicable to production Microsoft Intune environments.
 
 ---
 
 # Related Repositories
 
-This repository forms part of my Microsoft Cloud Administration learning portfolio and builds upon the previous projects:
+This repository forms part of my **TechLab365 Microsoft Cloud Administration Portfolio**.
 
-- **TechLab – Microsoft 365 Administration Portfolio**
-- **TechLab – Microsoft Entra ID Administration Portfolio**
-- **TechLab – Microsoft Intune Administration Portfolio** *(this repository)*
+The complete learning path includes:
 
-Together, these repositories demonstrate the progression from Microsoft 365 tenant administration and identity management through to modern endpoint management using Microsoft Intune.
+- **TechLab365 – Microsoft 365 Administration Portfolio**
+- **TechLab365 – Microsoft Entra ID Administration Portfolio**
+- **TechLab365 – Microsoft Intune Administration Portfolio** *(this repository)*
+
+Together, these repositories demonstrate my progression from Microsoft 365 tenant administration through identity management to modern endpoint management using Microsoft Intune.
 
 ---
 
@@ -416,19 +411,21 @@ Together, these repositories demonstrate the progression from Microsoft 365 tena
 
 This repository documents the complete lifecycle of managing Android Enterprise devices using Microsoft Intune, from preparing the cloud environment through to monitoring and troubleshooting managed endpoints.
 
-By combining Microsoft Entra ID, Microsoft Intune and Android Enterprise, I created a practical laboratory that demonstrates the day-to-day responsibilities of an Endpoint Administrator working within a modern Microsoft cloud environment.
+Beginning with the initial Microsoft Intune configuration and continuing through device enrolment, application deployment, Compliance Policies, Configuration Profiles, device management, monitoring and troubleshooting, each chapter documents practical administrative tasks performed within a working Microsoft cloud environment.
 
-Rather than focusing solely on product features, the repository follows a structured administrative workflow, showing how devices are enrolled, applications are deployed, security policies are enforced, configuration settings are applied, devices are monitored and operational issues are investigated using Microsoft Intune.
+Completing this project strengthened my understanding of modern endpoint management while reinforcing the relationship between Microsoft 365, Microsoft Entra ID and Microsoft Intune as an integrated cloud administration platform.
 
-Completing this project has strengthened my understanding of enterprise endpoint management while reinforcing best practices for technical documentation and GitHub portfolio development.
+In addition to developing technical skills, this repository further enhanced my ability to produce structured technical documentation using Markdown and GitHub, creating a professional portfolio that accurately reflects hands-on experience with enterprise endpoint administration.
+
+This repository completes the **TechLab365 Microsoft Cloud Administration Portfolio**, demonstrating the progression from Microsoft 365 administration to identity management and finally to endpoint management using Microsoft Intune.
 
 ---
 
-## Author
+# Author
 
 **Antonio Gabriele Rizzo**
 
-GitHub Portfolio – Microsoft Cloud Administration Learning Series
+TechLab365 – Microsoft Cloud Administration Learning Series
 
 - Microsoft 365 Administration
 - Microsoft Entra ID Administration
@@ -436,10 +433,10 @@ GitHub Portfolio – Microsoft Cloud Administration Learning Series
 
 ---
 
-## License
+# License
 
 This project is published for educational and portfolio purposes.
 
 The documentation is based on hands-on experience gained while building a Microsoft Intune laboratory using Microsoft Intune Plan 1, Microsoft Entra ID and Android Enterprise.
 
-Microsoft, Microsoft Intune, Microsoft Entra ID, Microsoft 365 and Android Enterprise are trademarks of their respective owners.
+Microsoft, Microsoft Intune, Microsoft Entra ID, Microsoft 365, Android Enterprise, Microsoft Company Portal and Managed Google Play are trademarks of their respective owners.
